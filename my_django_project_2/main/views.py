@@ -3,7 +3,9 @@ from django.http import HttpResponse
 
 # Create your views here.
 def index(request):
-    return HttpResponse('<h1>Это мой второй проект на Django!</h1>')
+    #  return HttpResponse('<h1>Это мой второй проект на Django!</h1>')
+    return render(request, 'main/index.html')
 
 def about(request):
-    return HttpResponse('<h1>Это вторая страница моего второго проекта на Django!</h1>')
+    #  return HttpResponse('<h1>Это вторая страница моего второго проекта на Django!</h1>')
+    return render(request, 'main/about.html')
